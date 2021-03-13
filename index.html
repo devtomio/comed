@@ -13,8 +13,13 @@
 		<link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+                <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js" type="text/javascript" charset="utf-8"></script>
 
 		<style>
+                        #mobile {
+                                display: none;
+                        }
+
 			.page {
 				display: none;
 			}
@@ -47,7 +52,13 @@
 			}
 		</style>
 		<script>
-			const setVisible = (selector, visible) => document.querySelector(selector).style.display = visible ? 'block' : 'none';
+                        const setVisible = (selector, visible) => document.querySelector(selector).style.display = visible ? 'block' : 'none';
+                        const md = new MobileDetect(navigator.userAgent);
+
+                        if (md.mobile()) {
+                                setVisible('#mobile', true);
+                                setVisible('#loader', false);
+                        }
 
 			$(document).ready(() => {
 				setVisible('.page', true);
@@ -57,6 +68,9 @@
 	</head>
 	<body class="github-font-standard">
 		<div class="loader center-object" id="loader"></div>
+                <div id="mobile">
+                        <h1 class="center-text">This website doesn't support mobile devices. Please turn on desktop view.</h1>
+                </div>
 		<div class="page">
 			<br />
 			<section class="parallax-container">
