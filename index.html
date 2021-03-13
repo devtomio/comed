@@ -1,160 +1,92 @@
-<!--
-Grade 8 - Virchow
-Computer Education 8
-Group 2
-Gallery Webpage
-Live Demo can be found at: https://comed.1chi.repl.co
--->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Group 2 | Gallery Webpage</title>
-		<link
-			href="https://modesta.alexflipnote.dev/css/modesta.css"
-			type="text/css"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://comed.1chi.repl.co/style.css"
-			type="text/css"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://comed.1chi.repl.co/script.js"
-			type="text/javascript"
-			charset="utf-8"
-		></script>
+		<title>Group 2 | Group Activity</title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="description" content="Group Activity 3rd Grading" />
+		<meta name="keywords" content="website" />
+		<meta name="revisit-after" content="7 days" />
+
+		<link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<style>
+			.page {
+				display: none;
+			}
+
+			.loader {
+				display: block;
+			}
+
+			.article-author {
+				font-style: italic;
+				font-size: 14px;
+				color: #27ae60;
+			}
+
+			.box-container p {
+				font-size: 18px;
+				margin-bottom: .2em;
+				color: #8e44ad;
+			}
+
+			.article-paragraph {
+				padding-left: 2.5em;
+			}
+
+			@media (max-width: 550px) {
+				.article-paragraph {
+					padding-left: 0;
+				}
+			}
+		</style>
+		<script>
+			const setVisible = (selector, visible) => document.querySelector(selector).style.display = visible ? 'block' : 'none';
+
+			$(document).ready(() => {
+				setVisible('.page', true);
+				setVisible('#loader', false);
+			});
+		</script>
 	</head>
-
 	<body class="github-font-standard">
-		<span class="blurple-text"
-			><h1 class="center">Gallery Webpage</h1></span
-		>
+		<div class="loader center-object" id="loader"></div>
+		<div class="page">
+			<section class="parallax-container">
+				<div class="parallax large" style="background-image: url(https://i.pinimg.com/564x/f7/55/a7/f755a7af1f7dc0c9daba0afe9d3a8e41.jpg)"></div>
+				<div class="content">
+					<h1 class="emerald-text center">Lorem Ipsum</h1>
+					<h4 class="article-author">by Connie Dhane Bergonio</h4>
 
-		<br />
-		<br />
+					<section class="container">
+						<div class="box-container">
+							<div class="article-paragraph"><p>
+								&emsp;Lorem ipsum dolor sit amet, nam tamquam dolorem forensibus no, sed tamquam petentium persequeris at. Dolore percipit ei eos, eu ius iudico noluisse, et vim dico sint nihil. Has an amet audire reformidans, labores aliquando sed te, sed aeque indoctum in. Mei te dolor vituperata, ex esse omnis utamur mei, quo te natum aliquam delenit. Id dolor integre electram eos, nibh rationibus at eos, eu vim mazim cotidieque.
+							</p></div>
+							<div class="article-paragraph"><p>
+								&emsp;Te usu volutpat recteque delicatissimi, ne debitis legendos pericula quo, no sit tritani fastidii accumsan. In eam assum aperiam persecuti, movet partem tamquam ut eum. Melius propriae explicari id pro, te ius simul postea scripserit. Eam an iudico partiendo, mel ex partem dissentiet efficiantur. Eu antiopam sententiae vim. Dicunt alterum voluptatibus ad eam, mea melius principes ne.
+							</p></div>
+							<div class="article-paragraph"><p>
+								&emsp;Quod utinam sit ea, ut mel doming impedit reformidans. Duo ad quas nonumy. Everti habemus mea id, sit zril eruditi te, cu has dicant nonumes. Pro amet etiam signiferumque at, dicta novum melius no vel. His brute blandit et, dolore assentior vituperatoribus pri ei. Cu harum malorum mei.
+							</p></div>
+						</div>
+					</section>
+				</div>
+			</section>
 
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-				<div class="numbertext">1 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.15752-9/131458367_3558629570871245_8753006224802782113_n.jpg?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=ceNfhwOf6UgAX__W1GK&_nc_ht=scontent.fdvo1-1.fna&oh=462021c3b03d122c342253b69b1dfa34&oe=5FFB34BA"
-					style="width: 100%"
-				/>
-				<div class="text">Lovely Arabit</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">2 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.15752-9/131366033_312074846649171_8638364145870523058_n.jpg?_nc_cat=107&ccb=2&_nc_sid=ae9488&_nc_ohc=Jf89yiC-fHwAX-4pxZu&_nc_ht=scontent.fdvo1-1.fna&oh=c2c601b72cc300429ae4cc47fab86b46&oe=5FFDEEEF"
-					style="width: 100%"
-				/>
-				<div class="text">Monaliza Alcoseba</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">3 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/130803130_864742304276560_4667891667375318853_o.jpg?_nc_cat=106&ccb=2&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=LeGU6peYjk0AX8er4cJ&_nc_ht=scontent.fdvo1-1.fna&tp=14&oh=a2a3294b931563241e656c478e68d6ae&oe=5FFD440A"
-					style="width: 100%"
-				/>
-				<div class="text">Jericho Allosa</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">4 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/84160248_520349621940602_5122118670826340352_o.jpg?_nc_cat=102&ccb=2&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=TSw9mYVrng8AX_M-Jsc&_nc_ht=scontent.fdvo1-1.fna&tp=14&oh=d8fa08b3d4f5ae5fd8409cf8c33d7480&oe=5FFDDF2E"
-					style="width: 100%"
-				/>
-				<div class="text">Sittie Andang</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">5 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.15752-9/131380828_435281150938009_2558324647952716349_n.jpg?_nc_cat=105&ccb=2&_nc_sid=ae9488&_nc_ohc=uLvcQFbmHt0AX8VK6wl&_nc_ht=scontent.fdvo1-1.fna&oh=9bcc2e9cc46d5480e4ce6b4a0a2c17ce&oe=5FFC9B00"
-					style="width: 100%"
-				/>
-				<div class="text">Dewey Apelo</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">6 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/83728453_2433860756928686_8028456730029457408_o.jpg?_nc_cat=108&ccb=2&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=Id5W0g-gfaMAX9DMKqs&_nc_ht=scontent.fdvo1-1.fna&tp=14&oh=52ced3a7a1b100081d635892ab6b0afd&oe=5FFB449B"
-					style="width: 100%"
-				/>
-				<div class="text">Connie Bergonio</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">7 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/131028255_102048315118154_8937525027947031077_o.jpg?_nc_cat=110&ccb=2&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=-UEcrrDveP0AX_hAXer&_nc_ht=scontent.fdvo1-1.fna&tp=14&oh=57dc79a08bb6cc51cc2a91b581646f82&oe=5FFB7DE7"
-					style="width: 100%"
-				/>
-				<div class="text">Chris Obeso</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div class="numbertext">8 / 8</div>
-				<img
-					src="https://scontent.fdvo1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/80726819_2963310640348156_4253911557588647936_n.jpg?_nc_cat=109&ccb=2&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=KsfsD5L4hqcAX8qAL-X&_nc_ht=scontent.fdvo1-1.fna&tp=14&oh=feb8a378246002bc3034d0a133cc785c&oe=5FFAEA60"
-					style="width: 100%"
-				/>
-				<div class="text">Jezzu Quimosing</div>
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<footer class="center box-container primary no-border-radius">
+				<p class="no-margin" style="color: #3498db;">
+					Group Activity 3rd Grading<br />
+					Arabit | Obeso | Allosa | Quimosing | Bergonio | Alcoseba | Apelo | Andang<br />
+					Copyright &#169; 2021<br />
+					Made with ❤️ by Group 2
+				</p>
+			</footer>
 		</div>
-		<br />
-
-		<div style="text-align: center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-			<span class="dot" onclick="currentSlide(6)"></span>
-			<span class="dot" onclick="currentSlide(7)"></span>
-			<span class="dot" onclick="currentSlide(8)"></span>
-		</div>
-		<br />
-		<br />
-
-		<span class="blurple-text"
-			><h3 class="center">Group Members</h3></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Alcoseba, Monaliza</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Allosa, Jericho</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Andang, Sittie Hadeah</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Apelo, Dewey Glyth</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Arabit, Lovely Heart</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Bergonio, Connie Dhane</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Obeso, Chris Adrian Louis</h6></span
-		>
-		<span class="disco-ball-text"
-			><h6 class="center">Quimosing, Jezzu Morrisen</h6></span
-		>
-
-		<br />
-		<br />
 	</body>
 </html>
