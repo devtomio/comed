@@ -55,14 +55,14 @@
                         const setVisible = (selector, visible) => document.querySelector(selector).style.display = visible ? 'block' : 'none';
                         const md = new MobileDetect(window.navigator.userAgent);
 
-                        if (md.mobile()) {
-                                setVisible('#mobile', true);
-                                setVisible('#loader', false);
-                        }
-
 			$(document).ready(() => {
-				setVisible('.page', true);
-				setVisible('#loader', false);
+				if (md.mobile()) {
+                                	setVisible('#mobile', true);
+                                	setVisible('#loader', false);
+                        	} else {
+					setVisible('.page', true);
+					setVisible('#loader', false);
+				}
 			});
 		</script>
 	</head>
