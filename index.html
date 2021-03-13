@@ -11,6 +11,7 @@
 		<meta name="revisit-after" content="7 days" />
 
 		<link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
+                <link href="https://tawian.io/text-spinners/spinners.css" type="text/css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
                 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js" type="text/javascript" charset="utf-8"></script>
@@ -45,6 +46,12 @@
 				padding-left: 2.5em;
 			}
 
+                        .loader-center {
+                                display: table-cell;
+                                text-align: center;
+                                vertical-align: middle;
+                        }
+
 			@media (max-width: 550px) {
 				.article-paragraph {
 					padding-left: 0;
@@ -67,7 +74,7 @@
 		</script>
 	</head>
 	<body class="github-font-standard">
-		<div class="loader center-object" id="loader"></div>
+		<div class="loading fish" id="loader">Loading...</div>
                 <div id="mobile">
                         <h1 class="center-text">This website doesn't support mobile devices. Please turn on desktop view.</h1>
                 </div>
